@@ -63,37 +63,38 @@ const Projects = () => {
         'Implementación de sistema de formateo para respuestas estructuradas',
         'Desarrollo de interfaz responsive con características adaptativas para móviles'
       ]
-    },
-    {
-      id: 3,
-      title: 'API de Gestión de Inventario',
-      shortDescription: 'API RESTful para gestión y monitoreo de inventario en tiempo real.',
-      fullDescription: 'API completa para la gestión de inventario que permite realizar operaciones CRUD sobre productos, categorías y proveedores. Incluye funcionalidades de búsqueda avanzada, historial de cambios y alertas de stock.',
-      imageUrl: '/placeholder-project3.jpg',
-      technologies: ['Express.js', 'Node.js', 'PostgreSQL', 'Redis', 'Docker'],
-      liveUrl: 'https://example.com/inventory-api',
-      githubUrl: 'https://github.com/yourusername/inventory-api',
-      achievements: [
-        'Arquitectura escalable que soporta hasta 1000 transacciones por segundo',
-        'Implementación de autenticación JWT y autorización basada en roles',
-        'Documentación automática con Swagger'
-      ]
-    },
-    {
-      id: 4,
-      title: 'Aplicación de Gestión de Proyectos',
-      shortDescription: 'Herramienta colaborativa para seguimiento y gestión de proyectos.',
-      fullDescription: 'Aplicación web que permite gestionar proyectos, tareas, equipos y recursos de manera colaborativa. Incluye funcionalidades como asignación de tareas, seguimiento de tiempo, comentarios en tiempo real y generación de informes.',
-      imageUrl: '/placeholder-project4.jpg',
-      technologies: ['React', 'TypeScript', 'GraphQL', 'Firebase', 'Material UI'],
-      liveUrl: 'https://example.com/project-management',
-      githubUrl: 'https://github.com/yourusername/project-management',
-      achievements: [
-        'Desarrollo de interfaz de usuario intuitiva con drag and drop',
-        'Implementación de notificaciones en tiempo real',
-        'Integración con Google Calendar y Slack'
-      ]
     }
+    // ,
+    // {
+    //   id: 3,
+    //   title: 'API de Gestión de Inventario',
+    //   shortDescription: 'API RESTful para gestión y monitoreo de inventario en tiempo real.',
+    //   fullDescription: 'API completa para la gestión de inventario que permite realizar operaciones CRUD sobre productos, categorías y proveedores. Incluye funcionalidades de búsqueda avanzada, historial de cambios y alertas de stock.',
+    //   imageUrl: '/placeholder-project3.jpg',
+    //   technologies: ['Express.js', 'Node.js', 'PostgreSQL', 'Redis', 'Docker'],
+    //   liveUrl: 'https://example.com/inventory-api',
+    //   githubUrl: 'https://github.com/yourusername/inventory-api',
+    //   achievements: [
+    //     'Arquitectura escalable que soporta hasta 1000 transacciones por segundo',
+    //     'Implementación de autenticación JWT y autorización basada en roles',
+    //     'Documentación automática con Swagger'
+    //   ]
+    // },
+    // {
+    //   id: 4,
+    //   title: 'Aplicación de Gestión de Proyectos',
+    //   shortDescription: 'Herramienta colaborativa para seguimiento y gestión de proyectos.',
+    //   fullDescription: 'Aplicación web que permite gestionar proyectos, tareas, equipos y recursos de manera colaborativa. Incluye funcionalidades como asignación de tareas, seguimiento de tiempo, comentarios en tiempo real y generación de informes.',
+    //   imageUrl: '/placeholder-project4.jpg',
+    //   technologies: ['React', 'TypeScript', 'GraphQL', 'Firebase', 'Material UI'],
+    //   liveUrl: 'https://example.com/project-management',
+    //   githubUrl: 'https://github.com/yourusername/project-management',
+    //   achievements: [
+    //     'Desarrollo de interfaz de usuario intuitiva con drag and drop',
+    //     'Implementación de notificaciones en tiempo real',
+    //     'Integración con Google Calendar y Slack'
+    //   ]
+    // }
   ];
 
   const handleClickOpen = (project) => {
