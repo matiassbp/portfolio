@@ -2,15 +2,16 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "homepage": "https://github.com/matiassbp/portfolio.git",
+  "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
+    
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
