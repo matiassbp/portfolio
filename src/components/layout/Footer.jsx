@@ -61,7 +61,7 @@ const Footer = () => {
               </MuiLink>
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              <MuiLink href="tel:+56984282128" underline="hover" color="inherit">
+              <MuiLink href="tel:+56999999999" underline="hover" color="inherit">
                 +56 9 8428 2128
               </MuiLink>
             </Typography>
