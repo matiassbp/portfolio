@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://matiassbp.github.io/portfolio/",
+  "homepage": "https://github.com/matiassbp/portfolio.git",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
