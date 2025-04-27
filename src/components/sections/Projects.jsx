@@ -25,6 +25,7 @@ import LinkIcon from '@mui/icons-material/Link';
 import CloseIcon from '@mui/icons-material/Close';
 import kanbanImage from '../../assets/images/1-kanban.webp';
 import ChatBotImage from '../../assets/images/2-chatbot.webp';
+import RHPortalImage from '../../assets/images/rhapp.webp';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -55,46 +56,32 @@ const Projects = () => {
       fullDescription: 'Chatbot desarrollado con React que utiliza la API de Google Gemini para proporcionar información detallada sobre experiencia profesional, habilidades técnicas y formación académica. Incluye una interfaz de chat moderna con animaciones fluidas, preguntas sugeridas e indicador de escritura que simula respuestas humanas.',
       imageUrl: ChatBotImage,
       technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Google Gemini API', 'Axios', 'JavaScript'],
-      liveUrl: 'https://github.com/matiassbp/ChatBot_CV',
-      githubUrl: 'https://matiassbp.github.io/ChatBot_CV/',
+      liveUrl: 'https://matiassbp.github.io/ChatBot_CV/',
+      githubUrl: 'https://github.com/matiassbp/ChatBot_CV',
       achievements: [
         'Integración de API de IA generativa con prompt engineering avanzado',
         'Diseño de experiencia de usuario fluida con animaciones y transiciones',
         'Implementación de sistema de formateo para respuestas estructuradas',
         'Desarrollo de interfaz responsive con características adaptativas para móviles'
       ]
+    },
+    {
+      id: 3,
+      title: 'RH Portal administración de postulantes',
+      shortDescription: 'Simulación de un sistema de reclutamiento para Recursos Humanos.',
+      fullDescription: 'Aplicación web de Front-End desarrollada en React + Vite que simula un sistema de reclutamiento para departamentos de Recursos Humanos. Permite visualizar vacantes disponibles, listar postulantes y hacer seguimiento de su progreso en las etapas de reclutamiento. Implementa navegación con React Router, estilos responsivos con TailwindCSS y animaciones suaves con Framer Motion. Los datos están mockeados directamente en el front-end para su visualización. Incluye funcionalidades extra como filtros y gráficos de postulaciones.',
+      imageUrl: RHPortalImage,
+      technologies: ['React', 'Vite', 'TailwindCSS', 'React Router', 'Framer Motion', 'Recharts'],
+      liveUrl: 'https://matiassbp.github.io/RHPortal/',
+      githubUrl: 'https://github.com/matiassbp/RHPortal',
+      achievements: [
+        'Desarrollo de flujo de postulación completo (Aplicado → Entrevista → Oferta → Contratado/Rechazado)',
+        'Implementación de filtros de búsqueda en vacantes y postulantes',
+        'Diseño responsivo adaptable a móviles y desktop',
+        'Visualización de estadísticas con gráficos simples',
+        'Navegación fluida con animaciones de página'
+      ]
     }
-    // ,
-    // {
-    //   id: 3,
-    //   title: 'API de Gestión de Inventario',
-    //   shortDescription: 'API RESTful para gestión y monitoreo de inventario en tiempo real.',
-    //   fullDescription: 'API completa para la gestión de inventario que permite realizar operaciones CRUD sobre productos, categorías y proveedores. Incluye funcionalidades de búsqueda avanzada, historial de cambios y alertas de stock.',
-    //   imageUrl: '/placeholder-project3.jpg',
-    //   technologies: ['Express.js', 'Node.js', 'PostgreSQL', 'Redis', 'Docker'],
-    //   liveUrl: 'https://example.com/inventory-api',
-    //   githubUrl: 'https://github.com/yourusername/inventory-api',
-    //   achievements: [
-    //     'Arquitectura escalable que soporta hasta 1000 transacciones por segundo',
-    //     'Implementación de autenticación JWT y autorización basada en roles',
-    //     'Documentación automática con Swagger'
-    //   ]
-    // },
-    // {
-    //   id: 4,
-    //   title: 'Aplicación de Gestión de Proyectos',
-    //   shortDescription: 'Herramienta colaborativa para seguimiento y gestión de proyectos.',
-    //   fullDescription: 'Aplicación web que permite gestionar proyectos, tareas, equipos y recursos de manera colaborativa. Incluye funcionalidades como asignación de tareas, seguimiento de tiempo, comentarios en tiempo real y generación de informes.',
-    //   imageUrl: '/placeholder-project4.jpg',
-    //   technologies: ['React', 'TypeScript', 'GraphQL', 'Firebase', 'Material UI'],
-    //   liveUrl: 'https://example.com/project-management',
-    //   githubUrl: 'https://github.com/yourusername/project-management',
-    //   achievements: [
-    //     'Desarrollo de interfaz de usuario intuitiva con drag and drop',
-    //     'Implementación de notificaciones en tiempo real',
-    //     'Integración con Google Calendar y Slack'
-    //   ]
-    // }
   ];
 
   const handleClickOpen = (project) => {
