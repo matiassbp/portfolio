@@ -108,37 +108,37 @@ const Contact = () => {
     {
       icon: <EmailIcon color="primary" fontSize="large" />,
       title: 'Email',
-      content: 'tuEmail@ejemplo.com',
-      link: 'mailto:tuEmail@ejemplo.com'
+      content: 'matiasbenonip@gmail.com',
+      link: 'mailto:matiasbenonip@gmail.com'
     },
     {
       icon: <LocationOnIcon color="primary" fontSize="large" />,
       title: 'Ubicación',
-      content: 'Ciudad, País',
+      content: 'Santiago, Chile',
       link: null
     },
     {
       icon: <PhoneIcon color="primary" fontSize="large" />,
       title: 'Teléfono',
-      content: '+123 456 7890',
-      link: 'tel:+123456789'
+      content: '+56 9 9999 9999',
+      link: 'tel:+56999999999'
     }
   ];
 
   const socialLinks = [
     {
       icon: <LinkedInIcon />,
-      url: 'https://linkedin.com/in/tuusuario',
+      url: 'www.linkedin.com/in/matías-benoni-peralta-1050541a0',
       label: 'LinkedIn'
     },
     {
       icon: <GitHubIcon />,
-      url: 'https://github.com/tuusuario',
+      url: 'https://github.com/matiassbp',
       label: 'GitHub'
     },
     {
       icon: <TwitterIcon />,
-      url: 'https://twitter.com/tuusuario',
+      url: 'https://twitter.com/',
       label: 'Twitter'
     }
   ];

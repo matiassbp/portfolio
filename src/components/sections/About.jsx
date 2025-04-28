@@ -1,24 +1,43 @@
-// src/components/sections/About.jsx
 import React from 'react';
-import { Box, Container, Grid, Typography, Paper, LinearProgress } from '@mui/material';
+import { Box, Container, Grid, Typography, Paper, Chip } from '@mui/material';
 import { motion } from 'framer-motion';
 import SectionTitle from '../common/SectionTitle';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import StorageIcon from '@mui/icons-material/Storage';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
+import CodeIcon from '@mui/icons-material/Code';
+import StorageTwoToneIcon from '@mui/icons-material/StorageTwoTone';
+import DnsIcon from '@mui/icons-material/Dns';
+import TerminalIcon from '@mui/icons-material/Terminal';
 
 const About = () => {
-  const skills = [
-    { name: 'Python', proficiency: 90 },
-    { name: 'SQL', proficiency: 85 },
-    { name: 'JavaScript/TypeScript', proficiency: 80 },
-    { name: 'Node.js', proficiency: 75 },
-    { name: 'Angular', proficiency: 80 },
-    { name: 'React', proficiency: 70 },
-    { name: 'ETL Pipelines', proficiency: 90 },
-    { name: 'Azure/Google Cloud', proficiency: 75 },
+  // Categorías de habilidades sin niveles
+  const skillCategories = [
+    {
+      category: "Lenguajes de Programación",
+      icon: <CodeIcon />,
+      skills: ['Python', 'JavaScript/TypeScript', 'SQL']
+    },
+    {
+      category: "Frameworks & Librerías",
+      icon: <TerminalIcon />,
+      skills: ['Angular', 'React', 'Node.js']
+    },
+    {
+      category: "Datos & Cloud",
+      icon: <StorageTwoToneIcon />,
+      skills: ['ETL Pipelines', 'Azure', 'Google Cloud']
+    },
+    {
+      category: "DevOps & Herramientas",
+      icon: <DnsIcon />,
+      skills: ['Docker', 'Git', 'CI/CD']
+    }
   ];
+
+  // Colores alternados para los chips
+  const chipColors = ['#10b981', '#3b82f6', '#8b5cf6', '#f59e0b'];
 
   const strengthAreas = [
     {
@@ -44,7 +63,6 @@ const About = () => {
   ];
 
   return (
-    
     <Box
       id="about"
       component="section"
@@ -101,7 +119,7 @@ const About = () => {
             </motion.div>
           </Grid>
 
-          {/* Habilidades técnicas */}
+          {/* Habilidades técnicas - Solo tecnologías sin niveles */}
           <Grid item xs={12} md={6}>
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -112,33 +130,45 @@ const About = () => {
               <Typography variant="h4" sx={{ mb: 3, fontWeight: 600 }}>
                 Habilidades Técnicas
               </Typography>
-              <Box>
-                {skills.map((skill, index) => (
-                  <Box key={skill.name} sx={{ mb: 2 }}>
-                    <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 0.5 }}>
-                      <Typography variant="body1" fontWeight={500}>
-                        {skill.name}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {skill.proficiency}%
-                      </Typography>
+              
+              {skillCategories.map((category, categoryIndex) => (
+                <Box key={category.category} sx={{ mb: 3 }}>
+                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 1.5 }}>
+                    <Box sx={{ 
+                      mr: 1, 
+                      color: 'primary.main',
+                      display: 'flex',
+                      alignItems: 'center'
+                    }}>
+                      {category.icon}
                     </Box>
-                    <LinearProgress
-                      variant="determinate"
-                      value={skill.proficiency}
-                      sx={{
-                        height: 8,
-                        borderRadius: 4,
-                        bgcolor: 'rgba(0, 0, 0, 0.08)',
-                        '& .MuiLinearProgress-bar': {
-                          borderRadius: 4,
-                          background: `linear-gradient(90deg, ${index % 2 ? '#2563eb' : '#10b981'} 0%, ${index % 2 ? '#3b82f6' : '#34d399'} 100%)`,
-                        }
-                      }}
-                    />
+                    <Typography variant="h6" fontWeight={500}>
+                      {category.category}
+                    </Typography>
                   </Box>
-                ))}
-              </Box>
+                  
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                    {category.skills.map((skill, skillIndex) => (
+                      <Chip
+                        key={skill}
+                        label={skill}
+                        sx={{
+                          bgcolor: chipColors[(categoryIndex + skillIndex) % chipColors.length],
+                          color: 'white',
+                          fontWeight: 500,
+                          px: 1,
+                          borderRadius: '16px',
+                          '&:hover': {
+                            opacity: 0.9,
+                            transform: 'translateY(-2px)',
+                            transition: 'transform 0.2s ease-in-out',
+                          },
+                        }}
+                      />
+                    ))}
+                  </Box>
+                </Box>
+              ))}
             </motion.div>
           </Grid>
         </Grid>
