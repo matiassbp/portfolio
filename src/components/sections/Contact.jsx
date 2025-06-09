@@ -77,8 +77,8 @@ const Contact = () => {
       // Simulamos éxito
       setSnackbar({
         open: true,
-        message: '¡Mensaje enviado con éxito! Te contactaré pronto.',
-        severity: 'success'
+        message: 'Funcionalidad en desarrollo :(',
+        severity: 'info'
       });
       
       // Resetear formulario
@@ -128,7 +128,7 @@ const Contact = () => {
   const socialLinks = [
     {
       icon: <LinkedInIcon />,
-      url: 'www.linkedin.com/in/matías-benoni-peralta-1050541a0',
+      url: 'https://linkedin.com/in/matías-benoni-peralta-1050541a0',
       label: 'LinkedIn'
     },
     {

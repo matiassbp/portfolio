@@ -11,17 +11,17 @@ const SocialIcons = ({ color = 'primary', size = 'medium', spacing = 1 }) => {
     { 
       name: 'LinkedIn', 
       icon: <LinkedInIcon />, 
-      url: 'https://www.linkedin.com/in/your-linkedin/' 
+      url: 'https://www.linkedin.com/in/matías-benoni-peralta-1050541a0/'
     },
     { 
       name: 'GitHub', 
       icon: <GitHubIcon />, 
-      url: 'https://github.com/your-github' 
+      url: 'https://github.com/matiassbp' 
     },
     { 
       name: 'Email', 
       icon: <EmailIcon />, 
-      url: 'mailto:matiasbenonidev@gmail.com' 
+      url: 'mailto:matiasbenonip@gmail.com' 
     },
   ];
 

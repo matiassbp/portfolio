@@ -56,13 +56,13 @@ const Footer = () => {
               Santiago, Chile
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-              <MuiLink href="mailto:matiasbenonidev@gmail.com" underline="hover" color="inherit">
-                matiasbenonidev@gmail.com
+              <MuiLink href="mailto:matiasbenonip@gmail.com" underline="hover" color="inherit">
+                matiasbenonip@gmail.com
               </MuiLink>
             </Typography>
             <Typography variant="body2" color="text.secondary">
               <MuiLink href="tel:+56999999999" underline="hover" color="inherit">
-                +56 9 8428 2128
+                +56 9 9999 9999
               </MuiLink>
             </Typography>
           </Grid>
@@ -70,7 +70,7 @@ const Footer = () => {
         
         <Box sx={{ mt: 4, pt: 3, borderTop: 1, borderColor: 'divider', textAlign: 'center' }}>
           <Typography variant="body2" color="text.secondary">
-            © {currentYear} Matías Benoni. Todos los derechos reservados.
+            © {currentYear} Matías Benoni Peralta. Ningún derecho reservado jaja.
           </Typography>
         </Box>
       </Container>
