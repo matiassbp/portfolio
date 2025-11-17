@@ -42,11 +42,11 @@ const Experience = () => {
       responsibilities: [
         'Maquetación de sistemas y planificación de recursos para la integración y gestión eficiente de datos.',
         'Modelamiento y normalización de estructuras de datos para mejorar el rendimiento y almacenamiento.',
-        'Implementación de soluciones en Java 8 y Spring Boot, asegurando escalabilidad y eficiencia de los procesos.',
+        'Implementación de soluciones en Java 8, Spring Boot y C#, asegurando escalabilidad y eficiencia de los procesos.',
         'Desarrollo y documentación de APIs para facilitar la interoperabilidad entre sistemas.',
         'Ejecución y documentación de pruebas QA, asegurando estabilidad y cumplimiento de los requerimientos.'
       ],
-      technologies: ['Java 8', 'Spring Boot', 'REST APIs', 'SQL', 'JUnit', 'QA Testing']
+      technologies: ['Java 8', 'Spring Boot', 'C#', 'REST APIs', 'SQL', 'JUnit', 'QA Testing']
     },
     {
       company: 'Orion Minera',
@@ -55,13 +55,14 @@ const Experience = () => {
       location: 'Santiago, Chile',
       description: 'Desarrollo integral de una aplicación web basada en un sistema ERP para gestión documental del departamento de operaciones, abarcando todas las fases del ciclo de vida de un proyecto.',
       responsibilities: [
-        'Realización de un estudio detallado de las necesidades de la empresa, estableciendo especificaciones funcionales y técnicas.',
-        'Evaluación de tecnologías de desarrollo para implementación on-premise usando stack MERN (MongoDB, Express.js, React, Node.js).',
-        'Aplicación de metodologías ágiles, con énfasis en Extreme Programming (XP), adaptadas a las necesidades del proyecto.',
-        'Modelado de base de datos y planificación de la estructura del software para optimizar la gestión documental.',
-        'Desarrollo del sistema en fases iterativas, realizando pruebas, ajustes y validaciones con usuarios finales.'
+        'Desarrollo del backend del ERP utilizando C# y .NET, implementando controladores RESTful, servicios y repositorios siguiendo principios SOLID.',
+        'Construcción de módulos de negocio en C# para la gestión de usuarios, permisos, workflow documental y auditoría de acciones.',
+        'Diseño e implementación de consultas optimizadas y procedimientos almacenados en SQL Server integrados con el backend C# mediante Entity Framework.',
+        'Modelado de base de datos normalizada y diseño de arquitectura escalable para soportar nuevos módulos del ERP.',
+        'Integración de autenticación y autorización basada en roles utilizando .NET Identity.',
+        'Aplicación de metodologías ágiles (XP) enfocadas en entregas incrementales, pruebas unitarias básicas y mejora continua del producto.'
       ],
-      technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'XP Methodology']
+      technologies: ['C#', '.NET', 'RESTful', 'SQL Server', 'XP Methodology']
     }
   ];
 
@@ -169,9 +170,9 @@ const Experience = () => {
                   </Typography>
                   <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                     {exp.technologies.map((tech, techIdx) => (
-                      <Chip 
-                        key={techIdx} 
-                        label={tech} 
+                      <Chip
+                        key={techIdx}
+                        label={tech}
                         color={techIdx % 2 === 0 ? "primary" : "secondary"}
                         variant="outlined"
                         sx={{ m: 0.5 }}
